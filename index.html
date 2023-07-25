@@ -2,19 +2,21 @@
 <html>
 <head>
     <title>Adventure Quest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Adventure Quest</h1>
         <p>Welcome to Adventure Quest! You are on a journey to find the legendary Lost Treasure of Azaroth.</p>
-        <button onclick="startAdventure()">Start Adventure</button>
+        <button class="start-btn" onclick="startAdventure()">Start Adventure</button>
         <p id="story"></p>
-        <button id="choice1" onclick="makeChoice(1)"></button>
-        <button id="choice2" onclick="makeChoice(2)"></button>
+        <button class="choice-btn" id="choice1" onclick="makeChoice(1)"></button>
+        <button class="choice-btn" id="choice2" onclick="makeChoice(2)"></button>
         <p id="result"></p>
     </div>
     <div class="floating-comments" id="floating-comments"></div>
+    <div class="mario" id="mario"></div>
     <script src="script.js"></script>
 </body>
 </html>
