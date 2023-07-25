@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adventure Quest</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Adventure Quest</h1>
+        <p>Welcome to Adventure Quest! You are on a journey to find the legendary Lost Treasure of Azaroth.</p>
+        <button onclick="startAdventure()">Start Adventure</button>
+        <p id="story"></p>
+        <button id="choice1" onclick="makeChoice(1)"></button>
+        <button id="choice2" onclick="makeChoice(2)"></button>
+        <p id="result"></p>
+    </div>
+    <div class="floating-comments" id="floating-comments"></div>
+    <button id="next-level-btn" onclick="nextLevel()" style="display: none;">Next Level</button>
+    <script src="script.js"></script>
+</body>
+</html>
