@@ -34,6 +34,7 @@ function startAdventure() {
     document.getElementById("choice1").textContent = "Enter the forest";
     document.getElementById("choice2").textContent = "Turn back and become a couch potato";
     document.getElementById("floating-comments").innerHTML = "";
+    document.getElementById("treasure").style.display = "none"; // Hide the treasure image
     level = 1;
 }
 
@@ -77,6 +78,11 @@ function makeChoice(choice) {
         document.getElementById("result").textContent = storyIndex === 6 || storyIndex === 7 ? "You've won!" : "Game Over!";
         document.getElementById("choice1").style.display = "none";
         document.getElementById("choice2").style.display = "none";
+
+        // Show the treasure image when the user wins
+        if (storyIndex === 6 || storyIndex === 7) {
+            document.getElementById("treasure").style.display = "block";
+        }
     } else if (storyIndex === 12) {
         document.getElementById("story").textContent = "You made a wrong choice and met a tragic end.";
         document.getElementById("result").textContent = "Game Over!";
@@ -117,5 +123,6 @@ function displayFloatingComment(comment) {
     // Remove the comment after a few seconds
     setTimeout(() => {
         floatingCommentsElement.removeChild(commentElement);
-    }, 5000);
+    }, 5000);
 }
+
