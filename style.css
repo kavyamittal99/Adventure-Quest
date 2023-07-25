@@ -93,7 +93,7 @@ p {
     left: 50%;
     width: 50px;
     height: 50px;
-    background-image: url('mario.png');
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a9/MarioNSMBUDeluxe.png');
     background-size: contain;
     background-repeat: no-repeat;
     animation: mario-jump 0.5s alternate infinite;
@@ -124,3 +124,19 @@ p {
         height: 30px;
     }
 }
+/* The rest of the CSS code, including the Mario graphics and other styles, remains unchanged from the previous version. */
+
+/* Treasure graphics */
+.treasure {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    background-image: url('https://w7.pngwing.com/pngs/622/771/png-transparent-treasure-box-illustration-buried-treasure-treasure-hunting-treasure-chest-miscellaneous-presentation-treasure-thumbnail.png'); /* Replace with a random treasure image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    display: none;
+}
+
